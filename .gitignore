@@ -1,8 +1,11 @@
 # Dependencies
 node_modules/
 
-# Build files
+# Build
 dist/
+
+# SQLite Database
+backend/database.db
 
 # macOS
 .DS_Store
@@ -13,3 +16,6 @@ dist/
 
 # Logs
 npm-debug.log*
+
+# ZIP
+electron.zip
