@@ -1,2 +1,15 @@
+# Dependencies
 node_modules/
-electron.zip
+
+# Build files
+dist/
+
+# macOS
+.DS_Store
+
+# Environment
+.env
+.env.local
+
+# Logs
+npm-debug.log*

@@ -5,13 +5,16 @@
   "main": "main.js",
   "scripts": {
     "dev": "vite",
+    "backend": "npm --prefix backend start",
+    "dev:db": "concurrently \"npm run backend\" \"npm run dev\"",
     "electron": "wait-on tcp:5173 && electron .",
     "dev:all": "concurrently \"npm run dev\" \"npm run electron\"",
     "build": "vite build"
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "recharts": "^3.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.64",
